@@ -1,4 +1,4 @@
 function abs(x) {
-    if (x >= 0) console.log(x)
-    else console.log(-x)
+    if (x >= 0) return x
+    else return -x
 }
