@@ -1,0 +1,40 @@
+footer.footer.mt-5
+  .footer__img
+    .container
+      .row.py-5
+        .col-12.col-sm-4
+          h4.menu__title.mb-4 Курсы
+          ul
+            - 
+                var list = ['Дизайн', 'Программирование', 'Маркетинг']
+            each item in list    
+                li
+                    a(href='#')= item
+        .col-12.col-sm-4
+          h4.menu__title.mb-4 Дизайн
+          ul
+            - 
+                var list = ['Графический дизайн', 'UI/UX дизайн', 'Motion дизайн']
+            each item in list    
+                li
+                    a(href='#')= item
+        .col-12.col-sm-4
+          h4.menu__title.mb-4 Маркетинг
+          ul
+            - 
+                var list = ['Digital Marketing', 'SMM Pro', 'Youtube', 'Targeting']
+            each item in list    
+                li
+                    a(href='#')= item
+      .row.py-4
+        .col-2
+          a(href='./index.html')
+            img(src='../assets/icons/navbar-logo.svg' alt='Footer logo icon')
+        .col-7
+        .social-networks-box.col-2
+          a.social-networks(href='#')
+            img(src='../assets/icons/facebook.svg' alt='Facebook icon')
+          a.social-networks.mx-3(href='#')
+            img(src='../assets/icons/instagram.svg' alt='Instagram icon')
+          a.social-networks(href='#')
+            img(src='../assets/icons/telegram.svg' alt='Telegram icon')

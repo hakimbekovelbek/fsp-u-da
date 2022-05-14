@@ -1,0 +1,15 @@
+{
+  "name": "node_js",
+  "version": "1.0.0",
+  "description": "Tutorial lesson",
+  "main": "index.js",
+  "scripts": {
+    "pug": "pug templates/pages/ --out ./pages -P -w"
+  },
+  "author": "Elbek Khakimbekov",
+  "license": "ISC",
+  "devDependencies": {
+    "pug-cli": "^1.0.0-alpha6",
+    "sass": "^1.51.0"
+  }
+}
