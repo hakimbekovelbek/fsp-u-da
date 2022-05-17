@@ -9,9 +9,9 @@ mixin footer-list(title, list)
 mixin logos(list)
   each item in list
     a.social-networks(href='#')
-      img(src=item alt='')
+      img(src='/assets/icons/' + item + '.svg' alt=item + ' ' + 'icon')
 
-mixin footer(theme)
+mixin footer(theme) 
   footer.footer.mt-5
     .footer__img
       .container
@@ -22,8 +22,8 @@ mixin footer(theme)
           +footer-list('Маркетинг', ['Digital Marketing', 'SMM Pro', 'Youtube', 'Targeting'])
         .row.py-4
           .col-2
-            a(href='./index.html')
-              img(src='../assets/icons/navbar-logo.svg' alt='Footer logo icon')
+            a(href='/index.html')
+              img(src='/assets/images/da-logo-white.svg' alt='Digital Academia Logo')
           .col-7
           .social-networks-box.col-2
-            +logos(['../assets/icons/facebook.svg', '../assets/icons/instagram.svg', '../assets/icons/telegram.svg'])
+            +logos(['facebook', 'instagram', 'telegram'])

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "pug": "pug templates/pages/ --out ./pages -P -w",
-    "sass": "sass ./sass:./css -w",
+    "sass": "sass ./sass:./assets/css -w",
     "compile": "concurrently \"npm run pug\" \"npm run sass\""
   },
   "author": "Elbek Khakimbekov",
