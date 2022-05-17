@@ -1,0 +1,30 @@
+header.header
+  div.container
+    nav.navbar.navbar-expand-lg.navbar-light
+      a.navbar-brand(href='')
+        img(src='' alt='Navbar logo')
+      button.navbar-toggler.navbar-burger(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+        img(src='' alt='Header burger')
+      #navbarSupportedContent.collapse.navbar-collapse
+        ul.navbar-nav.ml-auto
+          li.nav-item
+            a.nav-link(href='') Блог
+          li.nav-item.active
+            a.nav-link(href='')
+              | Курсы 
+              span.sr-only (current)
+          li.nav-item
+            a.nav-link(href='#') Контакты
+          li.nav-item
+            a.nav-link(href='#') О нас
+      #navbarSupportedContent.collapse.navbar-collapse
+        ul.navbar-nav.ml-auto
+          li.nav-item
+            select#languages.language(name='languages')
+              option.language__option(value='Ru') Ру
+              option.language__option(value='En') En
+          li.nav-item
+            a.nav-link(href='tel:+998909999797')
+              span
+                img(src='' alt='Phone Number')
+              | +99890 999 9797
