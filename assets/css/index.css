@@ -1,3 +1,19 @@
+.footer .container {
+  position: relative;
+}
+.footer__bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+}
+.footer_primary {
+  background: url(/assets/images/footer-bg-primary.svg) 0 0/cover;
+}
+.footer_secondary {
+  background: url(/assets/images/footer-bg-secondary.svg) 0 0/cover;
+}
+
 * {
   box-sizing: border-box;
 }

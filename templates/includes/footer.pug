@@ -12,8 +12,9 @@ mixin logos(list)
       img(src='/assets/icons/' + item + '.svg' alt=item + ' ' + 'icon')
 
 mixin footer(theme) 
-  .footer(class=theme)
+  .footer
     .container
+      .footer__bg(class=theme)
       .row
         +footer-list('Направление', ['Дизайн', 'Программирование', 'Маркетинг'])
         +footer-list('Дизайн', ['Графический дизайн', 'UI/UX дизайн', 'Motion дизайн'])
