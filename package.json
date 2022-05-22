@@ -16,6 +16,7 @@
     "sass": "^1.51.0"
   },
   "dependencies": {
-    "bootstrap": "^5.2.0-beta1"
+    "bootstrap": "^5.2.0-beta1",
+    "normalize.css": "^8.0.1"
   }
 }
