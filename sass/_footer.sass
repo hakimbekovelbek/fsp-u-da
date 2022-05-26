@@ -1,7 +1,7 @@
 .footer
     position: relative
-    padding-top: 4.375rem
-    height: 400px
+    padding-top: 3rem
+    min-height: 400px
     .container
         height: 100%
     &__bg
@@ -17,8 +17,10 @@
         background: url(/assets/images/footer-bg-secondary.svg) 0 0 / contain repeat-x
         // background-color: #444444
     &-nav, &-links 
-        width: 1200px
+        max-width: 1200px
         margin: auto
+    &-nav 
+        margin-bottom: 70px
     &-card
         color: white
         &__title
@@ -27,6 +29,9 @@
             font-size: 1rem
         &__link
             color: inherit
+    &-links
+        &__image
+            width: 180px
         
 .nav-list
     &__item
@@ -36,3 +41,18 @@
     &-box
         display: flex
         justify-content: space-between
+
+@media screen and (max-width: 1000px ) and (min-width: 768.01px)
+    .footer
+        &-nav, &-links 
+            max-width: 780px
+        &-nav 
+            margin-bottom: 30px
+        &-card
+            &__title
+                font-size: 1.2rem
+            &__list
+                font-size: .8rem
+        &-links
+            &__image
+                width: 140px
