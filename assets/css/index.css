@@ -1,3 +1,25 @@
+.header-bg-primary {
+  background-color: #ff6b00;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75rem;
+  margin: auto;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  width: 26rem;
+}
+.nav__link {
+  color: #fff;
+}
+
 .footer {
   position: relative;
   padding-top: 3rem;
