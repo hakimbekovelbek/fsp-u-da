@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "pug": "pug templates/pages/ --out ./pages -P -w",
-    "sass": "sass ./sass:./css -w",
+    "sass": "sass ./sass:./assets/css -w",
     "compile": "concurrently \"npm run pug\" \"npm run sass\""
   },
   "author": "Elbek Khakimbekov",
@@ -14,5 +14,8 @@
     "concurrently": "^7.1.0",
     "pug-cli": "^1.0.0-alpha6",
     "sass": "^1.51.0"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
   }
 }

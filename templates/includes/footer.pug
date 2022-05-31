@@ -1,29 +1,30 @@
 mixin footer-list(title, list)
   .col-12.col-sm-4
-    h4.menu__title.mb-4= title
-      ul
+    .footer-card
+      h4.footer-card__title.mb-4= title
+      ul.footer-card__list.nav-list
         each item in list    
-          li
-            a(href='#')= item
+          li.nav-list__item
+            a.footer-card__link(href='#')= item
             
 mixin logos(list)
   each item in list
     a.social-networks(href='#')
-      img(src=item alt='')
+      img(src='/assets/icons/' + item + '.svg' alt=item + ' ' + 'icon')
 
-mixin footer(theme)
-  footer.footer.mt-5
-    .footer__img
-      .container
-        .row.py-5
+mixin footer(theme) 
+  .footer
+    .footer__bg(class=theme)
+    .container.g-0
+      .footer-nav
+        .row.g-0.justify-content-center
           +footer-list('Направление', ['Дизайн', 'Программирование', 'Маркетинг'])
           +footer-list('Дизайн', ['Графический дизайн', 'UI/UX дизайн', 'Motion дизайн'])
           +footer-list('Программирование', ['Frontend', 'Backend', 'AI'])
-          +footer-list('Маркетинг', ['Digital Marketing', 'SMM Pro', 'Youtube', 'Targeting'])
-        .row.py-4
+      .footer-links
+        .row.justify-content-between.align-items-center
           .col-2
-            a(href='./index.html')
-              img(src='../assets/icons/navbar-logo.svg' alt='Footer logo icon')
-          .col-7
+              a(href='/index.html')
+                img.footer-links__image(src='/assets/images/da-logo-white.svg' alt='Digital Academia Logo')
           .social-networks-box.col-2
-            +logos(['../assets/icons/facebook.svg', '../assets/icons/instagram.svg', '../assets/icons/telegram.svg'])
+              +logos(['facebook', 'instagram', 'telegram'])

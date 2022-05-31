@@ -5,58 +5,164 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="/assets/css/fonts.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="stylesheet" href="/node_modules/normalize.css/normalize.css">
   </head>
   <body> 
-    <footer class="footer mt-5">
-      <div class="footer__img">
-        <div class="container">
-          <div class="row py-5">
-            <div class="col-12 col-sm-4">
-              <h4 class="menu__title mb-4">Направление
-                <ul>
-                  <li><a href="#">Дизайн</a></li>
-                  <li><a href="#">Программирование</a></li>
-                  <li><a href="#">Маркетинг</a></li>
-                </ul>
-              </h4>
-            </div>
-            <div class="col-12 col-sm-4">
-              <h4 class="menu__title mb-4">Дизайн
-                <ul>
-                  <li><a href="#">Графический дизайн</a></li>
-                  <li><a href="#">UI/UX дизайн</a></li>
-                  <li><a href="#">Motion дизайн</a></li>
-                </ul>
-              </h4>
-            </div>
-            <div class="col-12 col-sm-4">
-              <h4 class="menu__title mb-4">Программирование
-                <ul>
-                  <li><a href="#">Frontend</a></li>
-                  <li><a href="#">Backend</a></li>
-                  <li><a href="#">AI</a></li>
-                </ul>
-              </h4>
-            </div>
-            <div class="col-12 col-sm-4">
-              <h4 class="menu__title mb-4">Маркетинг
-                <ul>
-                  <li><a href="#">Digital Marketing</a></li>
-                  <li><a href="#">SMM Pro</a></li>
-                  <li><a href="#">Youtube</a></li>
-                  <li><a href="#">Targeting</a></li>
-                </ul>
-              </h4>
+    <div class="header header-bg-primary"> 
+      <div class="container">
+        <div class="nav"> 
+          <div class="nav__logo"><img src="/assets/images/da-logo-white.svg" alt="Digital Akademia"/></div>
+          <ul class="nav__list">
+            <li class="nav__list-item"> <a class="nav__link" href="#">Блог</a></li>
+            <li class="nav__list-item"> <a class="nav__link" href="#">Курсы</a></li>
+            <li class="nav__list-item"> <a class="nav__link" href="#">Контакты</a></li>
+            <li class="nav__list-item"> <a class="nav__link" href="#">О нас</a></li>
+          </ul>
+          <div class="nav__wrapper">
+            <div class="nav__lang-select-box"> <span>Ру</span><img src="/assets/icons/chevron-down.svg" alt="Chevron down"/></div>
+            <div class="nav__tel"> <a href="tel:+998999999797"> <img src="/assets/icons/tel.svg" alt="Tel icon"/>+998 99 999 9797</a></div>
+          </div>
+        </div>
+        <div class="header__hero"> 
+          <div class="row">
+            <div class="col">
+              <h1>Школа профессий будущего</h1>
             </div>
           </div>
-          <div class="row py-4">
-            <div class="col-2"><a href="./index.html"><img src="../assets/icons/navbar-logo.svg" alt="Footer logo icon"/></a></div>
-            <div class="col-7"></div>
-            <div class="social-networks-box col-2"><a class="social-networks" href="#"><img src="../assets/icons/facebook.svg" alt=""/></a><a class="social-networks" href="#"><img src="../assets/icons/instagram.svg" alt=""/></a><a class="social-networks" href="#"><img src="../assets/icons/telegram.svg" alt=""/></a>
+          <div class="row"> 
+            <div class="col"> 
+              <div class="header__wrapper"> 
+                <button class="header__action-btn">Записаться на курсы</button>
+                <button class="header__watch-btn"> <a href="https://youtube.com" target="_blank"> <img src="/assets/icons/play.svg" alt="Play icon"/></a></button>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </footer>
+    </div>
+    <div class="approach">
+      <div class="container">
+        <div class="approach__section">
+          <div class="row">
+            <div class="col">
+              <h1>Системный подход</h1><span>к образованию</span>
+            </div>
+          </div>
+          <div class="row"> 
+            <div class="col"> 
+              <div class="approach__wrapper">
+                <div class="approach__wrapper-img"><img src="/assets/images/Play_perspective_matte_s 1.png" alt="blue play img"/></div>
+                <div class="approach__wrapper-img"><img src="/assets/images/perspective_matte 8.png" alt="blue play img"/></div>
+                <div class="approach__wrapper-img"><img src="/assets/images/perspective_matte 4.png" alt="blue play img"/></div>
+                <div class="approach__wrapper-img"><img src="/assets/images/perspective_matte 5.png" alt="blue play img"/></div>
+                <div class="approach__wrapper-img"><img src="/assets/images/perspective_matte 6.png" alt="blue play img"/></div>
+              </div>
+            </div>
+          </div>
+          <ul class="approach__list">
+            <li class="approach__list-item"> <a class="approach__link" href="#">Видеолекции</a></li>
+            <li class="approach__list-item"> <a class="approach__link" href="#">Практика</a></li>
+            <li class="approach__list-item"> <a class="approach__link" href="#">Консультации</a></li>
+            <li class="approach__list-item"> <a class="approach__link" href="#">Сертификат</a></li>
+            <li class="approach__list-item"> <a class="approach__link" href="#">Трудоустройство</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer__bg footer_primary"></div>
+      <div class="container g-0">
+        <div class="footer-nav">
+          <div class="row g-0 justify-content-center">
+            <div class="col-12 col-sm-4">
+              <div class="footer-card">
+                <h4 class="footer-card__title mb-4">Направление</h4>
+                <ul class="footer-card__list nav-list">
+                  <li class="nav-list__item"><a class="footer-card__link" href="#">Дизайн</a></li>
+                  <li class="nav-list__item"><a class="footer-card__link" href="#">Программирование</a></li>
+                  <li class="nav-list__item"><a class="footer-card__link" href="#">Маркетинг</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4">
+              <div class="footer-card">
+                <h4 class="footer-card__title mb-4">Дизайн</h4>
+                <ul class="footer-card__list nav-list">
+                  <li class="nav-list__item"><a class="footer-card__link" href="#">Графический дизайн</a></li>
+                  <li class="nav-list__item"><a class="footer-card__link" href="#">UI/UX дизайн</a></li>
+                  <li class="nav-list__item"><a class="footer-card__link" href="#">Motion дизайн</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4">
+              <div class="footer-card">
+                <h4 class="footer-card__title mb-4">Программирование</h4>
+                <ul class="footer-card__list nav-list">
+                  <li class="nav-list__item"><a class="footer-card__link" href="#">Frontend</a></li>
+                  <li class="nav-list__item"><a class="footer-card__link" href="#">Backend</a></li>
+                  <li class="nav-list__item"><a class="footer-card__link" href="#">AI</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-links">
+          <div class="row justify-content-between align-items-center">
+            <div class="col-2"><a href="/index.html"><img class="footer-links__image" src="/assets/images/da-logo-white.svg" alt="Digital Academia Logo"/></a></div>
+            <div class="social-networks-box col-2"><a class="social-networks" href="#"><img src="/assets/icons/facebook.svg" alt="facebook icon"/></a><a class="social-networks" href="#"><img src="/assets/icons/instagram.svg" alt="instagram icon"/></a><a class="social-networks" href="#"><img src="/assets/icons/telegram.svg" alt="telegram icon"/></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer__bg footer_secondary"></div>
+      <div class="container g-0">
+        <div class="footer-nav">
+          <div class="row g-0 justify-content-center">
+            <div class="col-12 col-sm-4">
+              <div class="footer-card">
+                <h4 class="footer-card__title mb-4">Направление</h4>
+                <ul class="footer-card__list nav-list">
+                  <li class="nav-list__item"><a class="footer-card__link" href="#">Дизайн</a></li>
+                  <li class="nav-list__item"><a class="footer-card__link" href="#">Программирование</a></li>
+                  <li class="nav-list__item"><a class="footer-card__link" href="#">Маркетинг</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4">
+              <div class="footer-card">
+                <h4 class="footer-card__title mb-4">Дизайн</h4>
+                <ul class="footer-card__list nav-list">
+                  <li class="nav-list__item"><a class="footer-card__link" href="#">Графический дизайн</a></li>
+                  <li class="nav-list__item"><a class="footer-card__link" href="#">UI/UX дизайн</a></li>
+                  <li class="nav-list__item"><a class="footer-card__link" href="#">Motion дизайн</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4">
+              <div class="footer-card">
+                <h4 class="footer-card__title mb-4">Программирование</h4>
+                <ul class="footer-card__list nav-list">
+                  <li class="nav-list__item"><a class="footer-card__link" href="#">Frontend</a></li>
+                  <li class="nav-list__item"><a class="footer-card__link" href="#">Backend</a></li>
+                  <li class="nav-list__item"><a class="footer-card__link" href="#">AI</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-links">
+          <div class="row justify-content-between align-items-center">
+            <div class="col-2"><a href="/index.html"><img class="footer-links__image" src="/assets/images/da-logo-white.svg" alt="Digital Academia Logo"/></a></div>
+            <div class="social-networks-box col-2"><a class="social-networks" href="#"><img src="/assets/icons/facebook.svg" alt="facebook icon"/></a><a class="social-networks" href="#"><img src="/assets/icons/instagram.svg" alt="instagram icon"/></a><a class="social-networks" href="#"><img src="/assets/icons/telegram.svg" alt="telegram icon"/></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
