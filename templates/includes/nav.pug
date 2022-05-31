@@ -11,6 +11,12 @@ mixin nav()
                 a.nav__link(href="#") Контакты
             li.nav__list-item 
                 a.nav__link(href="#") О нас
-        .lang-select-box 
-            span Ру
-            img(src="/assets/icons/chevron-down.svg", alt="Chevron down")
+        .nav__wrapper
+            .nav__lang-select-box 
+                span Ру
+                img(src="/assets/icons/chevron-down.svg", alt="Chevron down")
+            .nav__tel 
+                
+                a(href="tel:+998999999797")  
+                    img(src="/assets/icons/tel.svg", alt="Tel icon") 
+                    | +998 99 999 9797

@@ -1,3 +1,56 @@
 .header
+    height: 48rem
+    padding-top: 3.25rem
     &-bg-primary
         background-color: #ff6b00
+    &__hero
+        height: 35rem
+        max-width: 75rem
+        margin: 4.625rem auto 0
+        background: url(/assets/images/hat.png) 110% 80% / 600px no-repeat
+        h1
+            font-size: 5.625rem
+            color: #fff
+    &__wrapper
+        display: flex
+        align-items: center
+        margin-top: 1.5rem
+    &__action-btn
+        width: 15rem
+        height: 3.75rem
+        margin-right: 1.5rem
+        border-radius: 3.125rem
+        border: 2px solid #fff
+        font-size: 1.125rem
+        font-weight: 700
+        color: #fff
+        background-color: transparent
+        cursor: pointer
+        transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out
+        &:hover
+            background-color: #fff
+            color: #ff6b00
+        &:active
+            background-color: #ffffffd6
+            border-color: #ffffffd6
+    &__watch-btn
+        box-sizing: content-box
+        position: relative
+        width: 57px
+        height: 57px
+        padding: 0
+        border: 6px solid transparent
+        cursor: pointer
+        background-color: transparent
+        border-radius: 50%
+        transition: border-color 0.3s ease-in-out, transform 0.1s ease-in-out
+        &:hover
+            border-color: #ffffff40
+        &:active
+            transform: scale(0.9)
+        img
+            width: 100%
+            height: 100%
+            position: absolute
+            top: 0
+            left: 0
