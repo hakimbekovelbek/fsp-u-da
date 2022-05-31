@@ -16,7 +16,7 @@ mixin footer(theme)
   .footer
     .footer__bg(class=theme)
     .container.g-0
-      .footer-nav.mb-5
+      .footer-nav
         .row.g-0.justify-content-center
           +footer-list('Направление', ['Дизайн', 'Программирование', 'Маркетинг'])
           +footer-list('Дизайн', ['Графический дизайн', 'UI/UX дизайн', 'Motion дизайн'])
@@ -25,6 +25,6 @@ mixin footer(theme)
         .row.justify-content-between.align-items-center
           .col-2
               a(href='/index.html')
-                img(src='/assets/images/da-logo-white.svg' alt='Digital Academia Logo')
+                img.footer-links__image(src='/assets/images/da-logo-white.svg' alt='Digital Academia Logo')
           .social-networks-box.col-2
               +logos(['facebook', 'instagram', 'telegram'])
