@@ -1,7 +1,114 @@
+.header {
+  height: 48rem;
+  padding-top: 3.25rem;
+}
+.header-bg-primary {
+  background-color: #ff6b00;
+}
+.header__hero {
+  height: 35rem;
+  max-width: 75rem;
+  margin: 4.625rem auto 0;
+  background: url(/assets/images/hat.png) 110% 80%/600px no-repeat;
+}
+.header__hero h1 {
+  font-size: 5.625rem;
+  color: #fff;
+}
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+.header__action-btn {
+  width: 15rem;
+  height: 3.75rem;
+  margin-right: 1.5rem;
+  border-radius: 3.125rem;
+  border: 2px solid #fff;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #fff;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+.header__action-btn:hover {
+  background-color: #fff;
+  color: #ff6b00;
+}
+.header__action-btn:active {
+  background-color: rgba(255, 255, 255, 0.8392156863);
+  border-color: rgba(255, 255, 255, 0.8392156863);
+}
+.header__watch-btn {
+  box-sizing: content-box;
+  position: relative;
+  width: 57px;
+  height: 57px;
+  padding: 0;
+  border: 6px solid transparent;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 50%;
+  transition: border-color 0.3s ease-in-out, transform 0.1s ease-in-out;
+}
+.header__watch-btn:hover {
+  border-color: rgba(255, 255, 255, 0.2509803922);
+}
+.header__watch-btn:active {
+  transform: scale(0.9);
+}
+.header__watch-btn img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75rem;
+  margin: auto;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  width: 26rem;
+}
+.nav__link {
+  color: #fff;
+}
+.nav__wrapper {
+  display: flex;
+}
+.nav__lang-select-box {
+  display: flex;
+  align-items: center;
+  margin-right: 2.5rem;
+}
+.nav__lang-select-box span {
+  margin-right: 0.625rem;
+  color: #fff;
+}
+.nav__tel img {
+  margin-right: 0.625rem;
+}
+.nav__tel a {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
 .footer {
   position: relative;
-  padding-top: 4.375rem;
-  height: 400px;
+  padding-top: 3rem;
+  min-height: 400px;
 }
 .footer .container {
   height: 100%;
@@ -20,8 +127,11 @@
   background: url(/assets/images/footer-bg-secondary.svg) 0 0/contain repeat-x;
 }
 .footer-nav, .footer-links {
-  width: 1200px;
+  max-width: 1200px;
   margin: auto;
+}
+.footer-nav {
+  margin-bottom: 70px;
 }
 .footer-card {
   color: white;
@@ -34,6 +144,9 @@
 }
 .footer-card__link {
   color: inherit;
+}
+.footer-links__image {
+  width: 180px;
 }
 
 .nav-list__item {
@@ -50,13 +163,71 @@
     max-width: 780px;
     margin: auto;
   }
+}
+@media screen and (max-width: 1000px) and (min-width: 768.01px) {
+  .footer-nav, .footer-links {
+    max-width: 780px;
+  }
+  .footer-nav {
+    margin-bottom: 30px;
+  }
   .footer-card__title {
     font-size: 1.2rem;
   }
   .footer-card__list {
-    font-size: 0.8 rem;
+    font-size: 0.8rem;
+  }
+  .footer-links__image {
+    width: 140px;
   }
 }
+.more-about__top {
+  padding: 0;
+  max-width: 75rem;
+  margin: 4.625rem auto 0;
+}
+.more-about__top h1 {
+  width: 45.563rem;
+  font-size: 4.475rem;
+  font-weight: 700;
+}
+.more-about__top h1 > span {
+  font-weight: 400;
+}
+.more-about__bottom {
+  padding: 0;
+  max-width: 75rem;
+  margin: 4.625rem auto 0;
+}
+.more-about__bottom .sequence {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.more-about__bottom .sequence .list_sequence {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 185px;
+  height: 185px;
+}
+.more-about__bottom .sequence .wrappers > img {
+  border: 1px solid #FF6B00;
+  border-radius: 50%;
+  padding: 30px;
+}
+.more-about__bottom .sequence .wrappers {
+  max-width: 75rem;
+  margin: -4.625rem auto 0;
+}
+.more-about__bottom .sequence .praktika {
+  width: 185px;
+}
+.more-about__bottom .sequence .wrappers > p {
+  margin-left: 10px;
+  font-size: 25px;
+}
+
 * {
   box-sizing: border-box;
 }

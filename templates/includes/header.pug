@@ -1,0 +1,18 @@
+include ./nav
+mixin header(theme)
+    .header(class='header-bg-' + theme) 
+        .container
+            +nav
+            .header__hero 
+                .row
+                    .col
+                        h1 Школа профессий будущего
+                .row 
+                    .col 
+                        .header__wrapper 
+                            button.header__action-btn Записаться на курсы
+                            button.header__watch-btn 
+                                a(href="https://youtube.com", target='_blank') 
+                                    img(src="/assets/icons/play.svg", alt="Play icon")
+
+                
